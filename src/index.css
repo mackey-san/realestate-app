@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+  background-color: #f4f5f7;
+  color: #1f2933;
+}
+
+/* ログイン・会員登録画面共通のレイアウト */
+.auth-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 16px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  max-width: 360px;
+  background: #fff;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.auth-form h1 {
+  margin: 0 0 16px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.auth-form label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.auth-form input {
+  padding: 10px 12px;
+  border: 1px solid #cbd2d9;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.auth-form button {
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2563eb;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.auth-form button:disabled {
+  background-color: #93b4f5;
+  cursor: not-allowed;
+}
+
+.auth-switch {
+  margin-top: 16px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.error-message {
+  color: #d64545;
+  font-size: 13px;
+  margin: 8px 0 0;
+}
+
+.info-message {
+  color: #1a7f37;
+  font-size: 13px;
+  margin: 8px 0 0;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 48px;
+}
+
+/* 物件一覧画面 */
+.property-page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+.property-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.property-header h1 {
+  margin: 0 0 4px;
+  font-size: 24px;
+}
+
+.logged-in-as {
+  margin: 0;
+  font-size: 13px;
+  color: #616e7c;
+}
+
+.property-header button {
+  padding: 10px 16px;
+  border: 1px solid #cbd2d9;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.property-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.property-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.property-card h2 {
+  margin: 0 0 8px;
+  font-size: 17px;
+}
+
+.property-rent {
+  margin: 0 0 4px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.property-area {
+  margin: 0;
+  font-size: 13px;
+  color: #616e7c;
+}
